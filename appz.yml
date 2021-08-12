@@ -18,7 +18,7 @@ deploy:
 
   
 properties:
-    revision : 30
+    revision : 31
     #MFA_PROVIDER : GA
     AUTHSECRET: 
         vault : ADMINER_AUTHSECRET
