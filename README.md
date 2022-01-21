@@ -1,2 +1,2 @@
-# adminer
-Adminer Database Management Tool
+# PGConnect
+Postgres Database HA Connectivity
