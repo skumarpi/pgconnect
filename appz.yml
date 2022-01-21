@@ -1,24 +1,26 @@
 app:
-    name: Adminer
-    code: adminer
+    name: PGConnect
+    code: PGCONNECT
     notify: skumar@ecloudcontrol.com
 
 build:
-    version: 4.8
+    version: 0.2
     env: DEV
     build_file: none
     output_files: output/*.zip
-    image_template: adminer-4.8
+    image_template: pgconnect-0.2
 
 deploy:
     context: skumarpi/DEV
     replicas: 1
     port:
-    - 8080
+    - 5000
+    - 5001
+    - 7000
 
   
 properties:
+    POSTGRES_PRIMARY: postgres13-ha-replica-13-x-1.postgres13-ha-replica-13-x:5432
+    POSTGRES_SECONDARY: postgres13-ha-replica-13-x-2.postgres13-ha-replica-13-x:5432
     revision : 32
-    #MFA_PROVIDER : GA
-    AUTHSECRET: 
-        vault : ADMINER_AUTHSECRET
+
