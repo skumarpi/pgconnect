@@ -12,7 +12,8 @@ build:
 
 deploy:
     context: skumarpi/DEV
-    replicas: 1
+    ingress: None
+    replicas: 2
     port:
     - 5000
     - 5001
@@ -22,5 +23,5 @@ deploy:
 properties:
     POSTGRES_PRIMARY: postgres13-ha-replica-13-x-1.postgres13-ha-replica-13-x:5432
     POSTGRES_SECONDARY: postgres13-ha-replica-13-x-2.postgres13-ha-replica-13-x:5432
-    revision : 35
+    revision : 36
 
