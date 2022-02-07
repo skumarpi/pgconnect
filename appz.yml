@@ -13,7 +13,7 @@ build:
 deploy:
     context: skumarpi/DEV
     ingress: None
-    replicas: 2
+    replicas: 1
     port:
     - 5000
     - 5001
