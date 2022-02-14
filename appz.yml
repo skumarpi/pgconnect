@@ -21,6 +21,10 @@ deploy:
 
   
 properties:
-    PG_NODES: postgres-ha-13-x-1.postgres-ha-13-x:5432,postgres-ha-13-x-2.postgres-ha-13-x:5432
+    POSTGRES_PRIMARY: postgres-ha-13-x-1.postgres-ha-13-x:5432
+    POSTGRES_SECONDARY: postgres-ha-13-x-2.postgres-ha-13-x:5432
+    #POSTGRES_03:
+    #POSTGRES_04:
+    #POSTGRES_05:
     revision : 38
 
